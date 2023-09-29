@@ -1,0 +1,229 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+header {
+    background-color: #000;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 5px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+header img {
+    width: 250px; /* Adjust the width to your preferred size */
+    height: 150px;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+section {
+    margin: 10px;
+    padding: 20px;
+    background-color: #d4f0f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 25px; /* Adjust the value to control the amount of space */
+}
+
+.project {
+    margin-bottom: 100px;
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+.project p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0078d4;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.project-image {
+    width: 400px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Set the desired height for the container */
+}
+
+.project {
+    /* Add any styles for your project container here */
+    text-align: center;
+}
+
+.view-project {
+    margin-bottom: 20px;
+    padding-top: 10px; /* Adjust the margin as needed for spacing */
+}
+
+#technologies {
+    text-align: center;
+}
+
+.tech-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between tech badges */
+    margin-top: 10px;
+}
+
+.tech-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #d4f0f1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tech-badge:hover {
+    transform: scale(1.05); /* Add a slight zoom effect on hover */
+}
+
+.badge-text {
+    font-size: 14px; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.badge-details {
+    display: none;
+    margin-top: 1px;
+}
+
+.tech-badge:hover .badge-details {
+    display: block;
+}
+
+/* Styles for Technology Badges */
+#technologies11 {
+    text-align: center;
+}
+
+.tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between tech badges */
+    margin-top: 20px;
+}
+
+.tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #d4f0f1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tech:hover {
+    transform: scale(1.05); /* Add a slight zoom effect on hover */
+}
+
+.badge {
+    font-size: 14px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+.tech:hover .badge-details {
+    display: block;
+}
+
+/* Initially hide the image gallery */
+.image-gallery {
+    display: none;
+    text-align: center; /* Center-align the images within the gallery */
+}
+
+/* Style the images within the gallery */
+.gallery-image {
+    display: inline-block;
+    max-width: 20%;
+    max-height: 10%; /* Ensure images don't exceed their container's width */
+    margin: 0px; /* Add spacing between images */
+    border: 2px solid #0078d4; /* Add a border style to the images */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    header img {
+        width: 150px;
+        height: 90px;
+    }
+
+    .project {
+        margin-bottom: 30px;
+    }
+
+    .project h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .project-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image-container {
+        height: auto;
+    }
+}

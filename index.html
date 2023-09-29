@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <section>
+    <header>
+        <img src="copy2.jpeg" alt=" ">
+        <h1>Sadiya Ayub</h1>
+        <p>Developer</p>
+    </header>
+    
+
+    <section id="about">
+        <h2>About Me </h2>
+        <p> I am passionate about taking on coding challenges and continuously honing my skills as I work on various projects 💻</p>
+        
+        <p> I'm deeply committed to ongoing improvement, not only in my work but also in finding innovative ways to enhance project outcomes 🔍</p>
+       
+        <p> Whether I'm delving into code or exploring creative design, I thrive on the opportunity to tackle challenges and achieve greatness through a methodical approach 🎯</p> 
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>  
+    
+        <div class="project">
+            <h3>Project 1 : Tailor website </h3>
+            <p>Empowers a prominent fashion boutique to showcase, organize, and manage their extensive clothing collection with ease and precision.</p>
+            <div class="image-container">
+            <img src="scree2.jpg" alt="Project 1 Screenshot" class="project-image" >
+           
+        </div>
+         <id="technologies">
+            <h2>Technologies Used</h2>
+
+            <div class="tech-badges">
+                <div class="tech-badge" data-tech="HTML">
+                    <div class="badge-text">HTML</div>
+                    <div class="badge-details">
+                        <p>Used for structuring the website content.</p>
+                        <p>Provides semantic elements for improved SEO.</p>
+                    </div>
+
+                    <div class="tech-badge" data-tech="JS">
+                        <div class="badge-text">JS</div>
+                        <div class="badge-details">
+                            <p>Used for enhancing website interactivity.</p>
+                            <p>Enables dynamic behavior and client-side scripting.</p>
+                        </div>
+                </div>
+                <div class="tech-badge" data-tech="CSS3">
+                    <div class="badge-text">CSS</div>
+                    <div class="badge-details">
+                        <p>Applied for styling and responsive design.</p>
+                        <p>Enables animations and transitions.</p>
+                    </div> 
+                </div>
+                <!-- Add more tech badges as needed -->
+            </div>
+        </section>
+        <a href="https://raymondsmangalore.web.app/" target="_blank">View Project</a>
+    
+
+ 
+
+    <section>
+        <div class="project">
+            <h3>Project 2 : Event Management App </h3>
+            <p>Gives users access to event management at their fingertips, allowing them to efficiently schedule, edit, and receive timely event reminders, enhancing their ability to plan and organize their commitments.</p>
+            <div class="image-container">
+            <img src="ok.jpg" alt="Project 1 Screenshot" class="project-image" >
+           
+        </div>
+        <id="technologies11">
+            <h2>Technologies Used</h2>
+            <div class="tech">
+                <div class="tech" data-tech="Figma (UI Design)">
+                    <div class="badge">Figma (UI Design)</div>
+                    <div class="badge-details">
+                        <p>Used for creating and designing user interfaces (UI).</p>
+                        <p>Collaborative design platform for UI/UX design and prototyping.</p>
+                    </div>
+                </div>
+                <div class="tech" data-tech="Flutter (UI Framework)">
+                    <div class="badge">Flutter (UI Framework)</div>
+                    <div class="badge-details">
+                        <p>Used for building natively compiled applications for mobile, web, and desktop from a single codebase.</p>
+                        <p>Developed by Google, it offers a rich set of pre-designed widgets.</p>
+                    </div>
+                </div>
+                <div class="tech-badge" data-tech="Firebase (Backend Service)">
+                    <div class="badge-text">Firebase (Backend Service)</div>
+                    <div class="badge-details">
+                        <p>Used for building and managing serverless cloud applications.</p>
+                        <p>Provides real-time database, authentication, hosting, and other backend services.</p>
+                    </div>
+                </div>
+                </div>
+            
+            </section>
+        
+                    <a href="#" class="view-images-link">View Screenshots</a>
+               
+                <!-- Add a container for the images -->
+                <div class="image-gallery">
+                    <img src="kk2.jpeg" alt="Firebase Screenshot 1" class="gallery-image">
+                    <img src="kk1.jpeg" alt="Firebase Screenshot 2" class="gallery-image">
+                    <img src="kk3.jpeg" alt="Firebase Screenshot 3" class="gallery-image">
+                </div>
+            
+            </section>
+            </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p><i class="fas fa-phone"></i> Phone : <span id="phone-number">+91 8217696772</span> <a href="#" id="show-phone">Hide</a></p>
+        <p><i class="far fa-envelope"></i> <a href="mailto:sadiyaayub16@gmail.com" target="_blank">Email</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sadiya-a-a15448245" target="_blank">LinkedIn</a></p>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+    <script>
+        // Get the elements by their IDs
+        var phoneNumber = document.getElementById("phone-number");
+        var showPhoneLink = document.getElementById("show-phone");
+    
+        // Add a click event listener to the "Show" link
+        showPhoneLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            // Toggle the visibility of the phone number
+            if (phoneNumber.style.display === "none") {
+                phoneNumber.style.display = "inline"; // Display the phone number
+                showPhoneLink.textContent = "Hide"; // Update the link text
+            } else {
+                phoneNumber.style.display = "none"; // Hide the phone number
+                showPhoneLink.textContent = "Show"; // Update the link text
+            }
+        });
+    </script> 
+   
+</body>
+</html>
