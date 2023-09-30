@@ -118,34 +118,40 @@
             </section>
     <section id="contact">
         <h2>Contact Me</h2>
-        <p><i class="fas fa-phone"></i> Phone : <span id="phone-number">+91 8217696772</span> <a href="#" id="show-phone">Hide</a></p>
+        <!-- <p id="phone-number" class="hidden">Phone: +1 123-456-7890</p><a href="#" id="show-phone">Show Phone Number</a> -->
+        <!-- <p><i class="fas fa-phone"></i> Phone : <span id="phone-number">+91 8217696772</span> <a href="#" id="show-phone">Hide</a></p> -->
+        <p>
+            <i class="fas fa-phone"></i> Phone : <span id="phone-number" class="hidden">+91 8217696772</span>
+            <a href="#" id="show-phone">Show</a>
+        </p>
         <p><i class="far fa-envelope"></i> <a href="mailto:sadiyaayub16@gmail.com" target="_blank">Email</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sadiya-a-a15448245" target="_blank">LinkedIn</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sadiya-ayub-a15448245" target="_blank">LinkedIn</a></p>
     </section>
 
 
 
 
     <script src="script.js"></script>
-    <script>
-        // Get the elements by their IDs
-        var phoneNumber = document.getElementById("phone-number");
-        var showPhoneLink = document.getElementById("show-phone");
-    
-        // Add a click event listener to the "Show" link
-        showPhoneLink.addEventListener("click", function(event) {
-            event.preventDefault();
-            
-            // Toggle the visibility of the phone number
-            if (phoneNumber.style.display === "none") {
-                phoneNumber.style.display = "inline"; // Display the phone number
-                showPhoneLink.textContent = "Hide"; // Update the link text
-            } else {
-                phoneNumber.style.display = "none"; // Hide the phone number
-                showPhoneLink.textContent = "Show"; // Update the link text
-            }
-        });
-    </script> 
+   <script>
+    // Get the elements by their IDs
+    var phoneNumber = document.getElementById("phone-number");
+    var showPhoneLink = document.getElementById("show-phone");
+
+    // Add a click event listener to the "Show" link
+    showPhoneLink.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        // Toggle the visibility of the phone number
+        if (phoneNumber.style.display === "none" || phoneNumber.style.display === "") {
+            phoneNumber.style.display = "block"; // Display the phone number
+            showPhoneLink.textContent = "Hide"; // Update the link text
+        } else {
+            phoneNumber.style.display = "none"; // Hide the phone number
+            showPhoneLink.textContent = "Show"; // Update the link text
+        }
+    });
+</script>
+
    
 </body>
 </html>

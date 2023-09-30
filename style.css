@@ -227,3 +227,10 @@ a:hover {
         height: auto;
     }
 }
+
+
+/* Define a CSS class to hide the phone number */
+.hidden {
+    display: none;
+}
+
