@@ -36,7 +36,7 @@ header img {
 section {
     margin: 10px;
     padding: 20px;
-    background-color: #d4f0f1;
+    background-color: #f0f0f0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -76,8 +76,11 @@ a:hover {
 }
 
 .project-image {
-    width: 400px; /* Set the desired width */
-    height: 300px; /* Set the desired height */
+    width: 500px; /* Set the desired width */
+    height: 350px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;   /* Set the desired height */
 }
 
 .image-container {
@@ -91,11 +94,6 @@ a:hover {
 .project {
     /* Add any styles for your project container here */
     text-align: center;
-}
-
-.view-project {
-    margin-bottom: 20px;
-    padding-top: 10px; /* Adjust the margin as needed for spacing */
 }
 
 #technologies {
@@ -117,7 +115,7 @@ a:hover {
     align-items: center;
     text-align: center;
     padding: 10px;
-    background-color: #d4f0f1;
+    background-color: #f0f0f0;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -153,7 +151,7 @@ a:hover {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px; /* Adjust the gap between tech badges */
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .tech {
@@ -162,7 +160,7 @@ a:hover {
     align-items: center;
     text-align: center;
     padding: 10px;
-    background-color: #d4f0f1;
+    background-color: #f0f0f0;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -193,7 +191,8 @@ a:hover {
     max-width: 20%;
     max-height: 10%; /* Ensure images don't exceed their container's width */
     margin: 0px; /* Add spacing between images */
-    border: 2px solid #0078d4; /* Add a border style to the images */
+    /* border: 2px solid #000;  */
+    border-radius: 10%;/* Add a border style to the images */
 }
 
 /* Media query for mobile devices */
