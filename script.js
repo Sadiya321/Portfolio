@@ -36,3 +36,15 @@ showPhoneLink.addEventListener("click", function(event) {
         showPhoneLink.textContent = "Show"; // Update the link text
     }
 });
+
+
+
+function openNav() {
+    document.getElementById("myNav").classList.add("open");
+}
+
+function closeNav() {
+    document.getElementById("myNav").classList.remove("open");
+}
+
+
