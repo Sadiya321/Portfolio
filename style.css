@@ -189,8 +189,8 @@ a:hover {
 .gallery-image {
     display: inline-block;
     max-width: 20%;
-    max-height: 10%; /* Ensure images don't exceed their container's width */
-    margin: 0px; /* Add spacing between images */
+    max-height: 30%; /* Ensure images don't exceed their container's width */
+    margin: 20px; /* Add spacing between images */
     /* border: 2px solid #000;  */
     border-radius: 10%;/* Add a border style to the images */
 }
